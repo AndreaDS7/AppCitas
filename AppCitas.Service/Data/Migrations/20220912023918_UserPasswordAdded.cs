@@ -13,15 +13,13 @@ namespace AppCitas.Service.Data.Migrations
                 name: "PasswordHash",
                 table: "Users",
                 type: "BLOB",
-                nullable: false,
-                defaultValue: new byte[0]);
+                nullable: true);
 
             migrationBuilder.AddColumn<byte[]>(
                 name: "PasswordSalt",
                 table: "Users",
                 type: "BLOB",
-                nullable: false,
-                defaultValue: new byte[0]);
+                nullable: true);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
