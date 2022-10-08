@@ -1,19 +1,26 @@
 using AppCitas.Service.Data;
+using AppCitas.Service.Interfaces;
+using AppCitas.Service.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
 namespace AppCitas;
+
 public class Startup
 {
     private readonly IConfiguration _config;
+
     public Startup(IConfiguration config)
     {
         _config = config;
     }
+
     public IConfiguration Configuration { get; }
+
     // This method gets called by the runtime. Use this method to add services to the container.
     public void ConfigureServices(IServiceCollection services)
     {
+        services.AddScoped<ITokenService, TokenService>();
         services.AddDbContext<DataContext>(options =>
         {
             options.UseSqlite(
@@ -28,6 +35,7 @@ public class Startup
             c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebAPIv5", Version = "v1" });
         });
     }
+
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {
@@ -37,6 +45,7 @@ public class Startup
             app.UseSwagger();
             app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebAPIv5 v1"));
         }
+
         app.UseHttpsRedirection();
 
         app.UseRouting();
