@@ -34,3 +34,8 @@
 .animate {
     transition: all 0.3s ease-in-out;
 }
+.iconStyle{
+    border-color: #ff0054 !important;
+    background-color: #ff0054 !important;
+    color: white !important;
+}

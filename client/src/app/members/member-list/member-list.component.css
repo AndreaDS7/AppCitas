@@ -1,0 +1,34 @@
+.register{
+    background-color: #f7b801 !important;
+    border: 2px solid #f7b801 !important;
+}
+.registerDark{
+    background-color: #f18701 !important;
+    border: 2px solid #f18701 !important;
+}
+.learn{
+    background-color: #f35b04 !important;
+    border: 2px solid #f35b04 !important;
+}
+/deep/ .pagination .page-item.active .page-link {
+    border-radius: 0 !important;
+    border-color: #ff0054 !important;
+    background-color: #ff0054 !important;
+    color: white !important;
+}
+  
+/deep/ .pagination .page-link {
+    margin: 0px 3px !important;
+    background-color: #f6f6f6 !important;
+    color: #ff0054 !important;
+}
+/deep/ .pagination .page-link:hover {
+    margin: 0px 3px !important;
+    background-color: #f1457f !important;
+    border-color: #f1457f !important;
+    color: white !important;
+}
+.centerMember {
+    display: flex;
+    justify-content: center;
+  }

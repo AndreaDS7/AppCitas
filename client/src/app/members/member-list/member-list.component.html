@@ -35,21 +35,21 @@
             </select>
         </div>
 
-        <button class="btn btn-primary ms-1" type="submit">Aplicar filtros</button>
-        <button (click)="resetFilters()" class="btn btn-info ms-1" type="submit">Borrar filtros</button>
+        <button class="btn btn-primary register ms-1" type="submit">Aplicar filtros</button>
+        <button (click)="resetFilters()" class="btn btn-info learn ms-1" type="submit">Borrar filtros</button>
 
         <div class="col">
             <div class="btn-group float-end">
                 <button
                     type="button"
-                    class="btn btn-primary"
+                    class="btn btn-primary registerDark"
                     name="orderBy"
                     [(ngModel)]="userParams.orderBy"
                     btnRadio="lastActive"
                     (click)="loadMembers()">Last Active</button>
                 <button
                     type="button"
-                    class="btn btn-primary"
+                    class="btn btn-primary register"
                     name="orderBy"
                     [(ngModel)]="userParams.orderBy"
                     btnRadio="created"
@@ -60,13 +60,13 @@
     </form>
 </div>
 
-<div class="row">
+<div class="row centerMember">
     <div class="col-2" *ngFor="let member of members">
         <app-member-card [member]="member"></app-member-card>
     </div>
 </div>
 
-<div class="d-flex justify-content-center" *ngIf="pagination">
+<div class="d-flex justify-content-center ayuda" *ngIf="pagination">
     <pagination
         [boundaryLinks]="true"
         [totalItems]="pagination.totalItems"

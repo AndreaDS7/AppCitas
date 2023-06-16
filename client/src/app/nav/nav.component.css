@@ -4,6 +4,16 @@
 
 img {
     max-height: 50px;
-    border: 2px solid white;
+    border: 2px solid #ccbbe2;
     display: inline;
+}
+.nav-background {
+    background-color: #3d348b !important;
+}
+.listItem:hover{
+    color: #ff0054 !important;
+}
+.jej{
+    background-color: #f1457f  !important;
+    border: 2px solid #f1457f  !important;
 }
