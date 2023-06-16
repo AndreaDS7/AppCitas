@@ -4,7 +4,7 @@ import { NgxSpinnerService } from 'ngx-spinner';
 @Injectable({
   providedIn: 'root'
 })
-export class LoadingService {
+export class LoadingService { 
   loadingRequestCount = 0;
 
   constructor(private spinnerService: NgxSpinnerService) { }

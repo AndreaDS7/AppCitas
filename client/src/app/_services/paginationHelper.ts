@@ -13,7 +13,7 @@ export function getPaginatedResult<T>(url: string, params: HttpParams, http: Htt
             if (pagination) {
                 paginatedResult.pagination = JSON.parse(pagination);
             }
-            return paginatedResult;
+            return paginatedResult;  
         })
     );
 }

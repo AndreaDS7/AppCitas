@@ -4,7 +4,7 @@ import {
   HttpHandler,
   HttpEvent,
   HttpInterceptor,
-  HttpErrorResponse
+  HttpErrorResponse 
 } from '@angular/common/http';
 import { catchError, Observable } from 'rxjs';
 import { NavigationExtras, Router } from '@angular/router';

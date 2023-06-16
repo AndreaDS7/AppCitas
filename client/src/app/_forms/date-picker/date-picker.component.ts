@@ -1,9 +1,9 @@
-import { Component, Input, Self } from '@angular/core';
-import { ControlValueAccessor, FormControl, NgControl } from '@angular/forms';
-import { BsDatepickerConfig } from 'ngx-bootstrap/datepicker';
+import { Component, Input, Self } from '@angular/core'; 
+import { ControlValueAccessor, FormControl, NgControl } from '@angular/forms'; 
+import { BsDatepickerConfig } from 'ngx-bootstrap/datepicker'; 
 
-@Component({
-  selector: 'app-date-picker',
+@Component({ 
+  selector: 'app-date-picker', 
   templateUrl: './date-picker.component.html',
   styleUrls: ['./date-picker.component.css']
 })

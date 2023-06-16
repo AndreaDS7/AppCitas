@@ -5,7 +5,7 @@ import { Photo } from '../_models/photo';
 import { User } from '../_models/user';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root' 
 })
 export class AdminService {
   baseUrl = environment.apiUrl;

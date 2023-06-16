@@ -1,7 +1,7 @@
 using API.Interfaces;
 using AutoMapper;
 
-namespace API.Data
+namespace API.Data 
 {
     public class UnitOfWork : IUnitOfWork
     {

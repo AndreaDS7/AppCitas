@@ -4,7 +4,7 @@ import { MembersService } from '../_services/members.service';
 import { Pagination } from '../_models/pagination';
 
 @Component({
-  selector: 'app-lists',
+  selector: 'app-lists', 
   templateUrl: './lists.component.html',
   styleUrls: ['./lists.component.css']
 })

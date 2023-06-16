@@ -9,7 +9,7 @@ export class PreventUnsavedChangesGuard implements CanDeactivate<MemberEditCompo
   canDeactivate(component: MemberEditComponent): boolean {
     if (component.editForm?.dirty) {
       return confirm('Si abandonas la página se perderán tus cambios, ¿continuar?');
-    }
+    } 
     return true;
   }
 

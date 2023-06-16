@@ -5,7 +5,7 @@ import { ToastrService } from 'ngx-toastr';
 import { AccountService } from '../_services/account.service';
 
 @Component({
-  selector: 'app-register',
+  selector: 'app-register',    
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })

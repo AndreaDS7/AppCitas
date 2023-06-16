@@ -5,7 +5,7 @@ import { environment } from 'src/environments/environment';
 import { User } from '../_models/user';
 import { PresenceService } from './presence.service';
 
-@Injectable({
+@Injectable({ 
   providedIn: 'root'
 })
 export class AccountService {

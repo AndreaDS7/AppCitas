@@ -5,7 +5,7 @@ import { UserParams } from 'src/app/_models/userParams';
 import { MembersService } from 'src/app/_services/members.service';
 
 @Component({
-  selector: 'app-member-list',
+  selector: 'app-member-list', 
   templateUrl: './member-list.component.html',
   styleUrls: ['./member-list.component.css']
 })

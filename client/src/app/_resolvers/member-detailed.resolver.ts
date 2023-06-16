@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import {
   Router, Resolve,
   RouterStateSnapshot,
-  ActivatedRouteSnapshot
+  ActivatedRouteSnapshot 
 } from '@angular/router';
 import { Observable, of } from 'rxjs';
 import { MembersService } from '../_services/members.service';

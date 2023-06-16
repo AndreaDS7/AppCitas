@@ -4,7 +4,7 @@ export interface Member {
     id: number;
     username: string;
     photoUrl: string;
-    age: number;
+    age: number; 
     knownAs: string;
     created: Date;
     lastActive: Date;

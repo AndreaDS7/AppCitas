@@ -1,11 +1,11 @@
-<div class="mb-3">
-    <input
-        type={{type}}
+<div class="mb-3"> 
+    <input 
+        type={{type}} 
         [class.is-invalid]="chonguitos.touched && chonguitos.invalid"
-        class="form-control"
-        [formControl]="chonguitos"
+        class="form-control" 
+        [formControl]="chonguitos" 
         placeholder={{label}}
-    >
+    > 
     <div class="invalid-feedback" *ngIf="chonguitos.errors?.['required']">
         Por favor ingrese un(a) {{label}}
     </div>

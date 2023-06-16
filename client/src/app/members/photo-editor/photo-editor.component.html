@@ -9,7 +9,7 @@
             <span class="text-danger">Awaiting approval</span>
         </div>
         <div class="text-center">
-            <button
+            <button 
                 class="btn btn-sm"
                 [disabled]="photo.isMain || !photo.isApproved"
                 (click)="setMainPhoto(photo)"

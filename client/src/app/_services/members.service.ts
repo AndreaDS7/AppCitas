@@ -7,7 +7,7 @@ import { UserParams } from '../_models/userParams';
 import { AccountService } from './account.service';
 import { User } from '../_models/user';
 import { getPaginatedResult, getPaginationHeaders } from './paginationHelper';
-
+  
 @Injectable({
   providedIn: 'root'
 })

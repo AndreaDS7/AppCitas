@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure;
 
-namespace API.DTOs
+namespace API.DTOs 
 {
     public class RegisterDto
     {

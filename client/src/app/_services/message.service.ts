@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 import { Message } from '../_models/message';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root'  
 })
 export class MessageService {
   baseUrl = environment.apiUrl;
