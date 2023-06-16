@@ -1,7 +1,7 @@
 using System.Runtime.CompilerServices;
 using Microsoft.EntityFrameworkCore;
 
-namespace API.Helpers
+namespace API.Helpers 
 {
     public class PagedList<T> : List<T>
     {
